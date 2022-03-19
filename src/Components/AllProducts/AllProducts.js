@@ -3,7 +3,7 @@ import SingleProduct from '../SingleProduct/SingleProduct';
 import './AllProducts.css';
 
 const AllProducts = (props) => {
-    // const { setCartCount } = props;
+    const { plusCartCount } = props;
 const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -20,7 +20,12 @@ const [products, setProducts] = useState([]);
 
            {
                products.map( (pd) => (
-                   <SingleProduct key = {pd.id} product = {pd}></SingleProduct>
+                   <SingleProduct 
+                   plusCartCount = {plusCartCount}
+                   key = {pd.id} 
+                   product = {pd}
+
+                   ></SingleProduct>
                   ))
            }
            </div>
