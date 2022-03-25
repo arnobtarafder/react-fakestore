@@ -10,7 +10,7 @@ const [products, setProducts] = useState([]);
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())
             .then(json => setProducts(json))
-    }, [products])
+    }, [])
     // console.log(products);
     return (
         <div>
@@ -21,7 +21,7 @@ const [products, setProducts] = useState([]);
            {
                products.map( (pd) => (
                    <SingleProduct 
-                   plusCartCount = {plusCartCount}
+                   setCartCount = {plusCartCount} // this name is important
                    key = {pd.id} 
                    product = {pd}
 
