@@ -7,7 +7,11 @@ const SingleProduct = (props) => {
     const { setCartCount } = props;
     return (
         
-        <div className='col-md-4' data-aos="fade-right">
+            <div className='col-md-4' 
+            data-aos="zoom-out-down"
+            // data-aos-easing="linear"
+            // data-aos-duration="1500"
+            >
            {/* <h1>Single Product</h1> */}
             <div className="card p-2 border">
                 <img className='w-50 m-auto' src={props.product.image} alt="" />
@@ -21,6 +25,7 @@ const SingleProduct = (props) => {
            </div>
             </div>
         </div>
+        
     );
 };
 
