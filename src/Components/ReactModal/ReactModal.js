@@ -26,9 +26,6 @@ const ReactModal = (props) => {
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>
-        <Button variant="primary" onClick={handleClose}>
-          Save
-        </Button>
       </Modal.Footer>
     </Modal>
   </>
